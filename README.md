@@ -1,6 +1,7 @@
-# 5-StagePipelineProcessor
- 
-# 5-Stage Pipeline Processor ## Overview This project is a 5-stage pipeline processor coded in Verilog using the ARMv8 instruction set. The processor is designed to run on a Raspberry Pi or an Ubuntu virtual machine using Icarus Verilog for simulation and GTKWave for waveform analysis.
+# 5-Stage Pipeline Processor
+
+## Overview
+This project is a 5-stage pipeline processor coded in Verilog using the ARMv8 instruction set. The processor is designed to run on a Raspberry Pi or an Ubuntu virtual machine using Icarus Verilog for simulation and GTKWave for waveform analysis.
 
 ## Files
 - `SignExtender.v`: Performs sign extension for different instruction types.
@@ -20,17 +21,17 @@
 
 ## Installation
 1. **Clone the repository from GitHub**:
-```sh git clone https://github.com/yourusername/5-Stage-Pipeline-Processor.git cd 5-Stage-Pipeline-Processor```
+```git clone https://github.com/yourusername/5-Stage-Pipeline-Processor.git cd 5-Stage-Pipeline-Processor```
 2. **Install Icarus Verilog**:
-```sh sudo apt-get install iverilog```
+```sudo apt-get install iverilog```
 3. **Install GTKWave**:
-```sh sudo apt-get install gtkwave```
+```sudo apt-get install gtkwave```
 
 ## Usage
 1. **Compile the Verilog files**:
-```sh iverilog -o SincleCycleProcTest SincleCycleControl.v SincleCycleProc.v SincleCycleProcTest.v ALU.v DataMemory.v InstructionMemory.v NextPC.v SignExtender.v```
+```iverilog -o SincleCycleProcTest SincleCycleControl.v SincleCycleProc.v SincleCycleProcTest.v ALU.v DataMemory.v InstructionMemory.v NextPC.v SignExtender.v```
 2. **Run the simulation**:
-```sh vvp SincleCycleProcTest```
-3. **Open GTKWave and Load the VCD file**:
-```sh gtkwave SincleCycleProcTest.vcd```
+```vvp SincleCycleProcTest```
+3. **Open GTKWave and load the VCD file**:
+```gtkwave SincleCycleProcTest.vcd```
 
