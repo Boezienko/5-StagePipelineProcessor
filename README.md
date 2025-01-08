@@ -21,17 +21,19 @@ This project is a 5-stage pipeline processor coded in Verilog using the ARMv8 in
 
 ## Installation
 1. **Clone the repository from GitHub**:
-```git clone https://github.com/yourusername/5-Stage-Pipeline-Processor.git cd 5-Stage-Pipeline-Processor```
+```git clone https://github.com/Boezienko/5-StagePipelineProcessor.git```
 2. **Install Icarus Verilog**:
 ```sudo apt-get install iverilog```
 3. **Install GTKWave**:
 ```sudo apt-get install gtkwave```
 
 ## Usage
+1. **Navigate to the repositorie's directory**
+```cd 5-StagePipelineProcessor```
 1. **Compile the Verilog files**:
-```iverilog -o SincleCycleProcTest SincleCycleControl.v SincleCycleProc.v SincleCycleProcTest.v ALU.v DataMemory.v InstructionMemory.v NextPC.v SignExtender.v```
+```iverilog -o SingleCycleProcTest SingleCycleControl.v SingleCycleProc.v SingleCycleProcTest.v ALU.v DataMemory.v InstructionMemory.v NextPC.v SignExtender.v```
 2. **Run the simulation**:
-```vvp SincleCycleProcTest```
+```vvp SingleCycleProcTest```
 3. **Open GTKWave and load the VCD file**:
-```gtkwave SincleCycleProcTest.vcd```
+```gtkwave singlecycle.vcd```
 
